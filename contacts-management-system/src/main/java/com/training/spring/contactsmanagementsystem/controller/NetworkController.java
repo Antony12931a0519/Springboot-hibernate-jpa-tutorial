@@ -3,9 +3,11 @@ package com.training.spring.contactsmanagementsystem.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.training.spring.contactsmanagementsystem.models.NetworksModel;
@@ -32,6 +34,20 @@ public class NetworkController {
 
 	}
 
+	@RequestMapping(value = "/{networkName}", produces = "application/json", method = { RequestMethod.GET })
+	public NetworksModel getNetworkBySpecifiedField(@PathVariable("networkName") String networkName) {
+
+		return networksService.getNetworksByName(networkName);
+
+	}
+	
+	@RequestMapping(value = "/field", produces = "application/json", method = { RequestMethod.GET })
+	public NetworksModel getNetworkByField(@RequestParam("networkName") String networkName) {
+
+		return networksService.getNetworksByName(networkName);
+
+	}
+
 	@RequestMapping(value = "/add", consumes = "application/json", produces = "application/json", method = {
 			RequestMethod.POST })
 	public String addNetwork(@RequestBody NetworksModel networksModel) {
@@ -47,7 +63,7 @@ public class NetworkController {
 		return networksService.addNetworks(networksModels);
 
 	}
-	
+
 	@RequestMapping(value = "/update", consumes = "application/json", produces = "application/json", method = {
 			RequestMethod.PUT })
 	public String updateNetwork(@RequestBody NetworksModel networksModel) {

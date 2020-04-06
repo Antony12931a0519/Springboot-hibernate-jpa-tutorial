@@ -34,12 +34,21 @@ public class NetworksService {
 	}
 
 	public NetworksModel getNetworksByName(String networkName) {
+		
+		
+		try {
+			Networks networks = networksDAO.getRecordsByNetworkName(networkName);
+			NetworksModel networksModel = new NetworksModel();
+			networksModel.setNetworkId(networks.getNetworkId());
+			networksModel.setNetworkName(networks.getNetworkName());
+			return networksModel;
+			
+		}catch(Exception ec) {
+			System.out.println(ec);
+		}
+		return null;
 
-		Networks networks = networksDAO.getRecordsByNetworkName(networkName);
-		NetworksModel networksModel = new NetworksModel();
-		networksModel.setNetworkId(networks.getNetworkId());
-		networksModel.setNetworkName(networks.getNetworkName());
-		return networksModel;
+		
 
 	}
 
