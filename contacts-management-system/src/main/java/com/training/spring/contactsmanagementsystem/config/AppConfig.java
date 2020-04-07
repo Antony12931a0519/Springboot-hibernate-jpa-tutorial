@@ -1,4 +1,4 @@
-package com.training.spring.contactsmanagementsystem.config;
+/*package com.training.spring.contactsmanagementsystem.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -18,5 +18,5 @@ public class AppConfig extends WebSecurityConfigurerAdapter {
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication().withUser(userName).password("{noop}"+password).roles("USER");
 	}
-
 }
+*/

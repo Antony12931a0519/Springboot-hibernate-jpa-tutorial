@@ -119,7 +119,33 @@ consumes="application/json",
 	
 	localhost:12345/networks/list
 	
+---------------------------------------------------------
+
+@SqlResultSetMapping(name = "mapppinNativeQuery", // same as resultSetMapping
+		// above in NativeQuery
+		classes = {
+				@ConstructorResult(targetClass = com.training.spring.contactsmanagementsystem.entities.Networks.class, columns = {
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+				}) })	
+				
+				@SqlResultSetMapping(name = "1", // same as resultSetMapping
+		// above in NativeQuery
+		classes = {
+				@ConstructorResult(targetClass = com.training.spring.contactsmanagementsystem.entities.Networks.class, columns = {
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+						@ColumnResult(name = "network_id", type = Integer.class),
+						@ColumnResult(name = "network_name", type = String.class)
+				}) })	
 	
 	
 	
+
 	

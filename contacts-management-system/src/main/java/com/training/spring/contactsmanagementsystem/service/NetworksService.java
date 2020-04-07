@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.training.spring.contactsmanagementsystem.dao.NetworkRepository;
 import com.training.spring.contactsmanagementsystem.dao.NetworksDAO;
 import com.training.spring.contactsmanagementsystem.entities.Networks;
 import com.training.spring.contactsmanagementsystem.models.NetworksModel;
@@ -16,6 +17,9 @@ public class NetworksService {
 
 	@Autowired
 	NetworksDAO networksDAO;
+	
+	@Autowired
+	NetworkRepository networksRepo;
 
 	public List<NetworksModel> getNetworksList() {
 
@@ -34,21 +38,65 @@ public class NetworksService {
 	}
 
 	public NetworksModel getNetworksByName(String networkName) {
-		
-		
+
 		try {
 			Networks networks = networksDAO.getRecordsByNetworkName(networkName);
 			NetworksModel networksModel = new NetworksModel();
 			networksModel.setNetworkId(networks.getNetworkId());
 			networksModel.setNetworkName(networks.getNetworkName());
 			return networksModel;
-			
-		}catch(Exception ec) {
+
+		} catch (Exception ec) {
 			System.out.println(ec);
 		}
 		return null;
+	}
 
-		
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation(String networkName) {
+
+		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation(networkName);
+
+	}
+	
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation(int networkId) {
+
+		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation(networkId);
+
+	}
+	
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation() {
+
+		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation();
+
+	}
+	
+	public List<Networks> getNetworksByNetworkNameUsingQueryAnnotation(String networkName) {
+
+		return (List<Networks>) networksDAO.getNetworksByNetworkNameUsingQueryAnnotation(networkName);
+
+	}
+	
+	public List<Networks> getNetworksUsingEntityManager() {
+
+		return (List<Networks>) networksRepo.getNetworksUsingEntityManager();
+
+	}
+	
+	public List<Networks> getNetworksUsingEntityManager1() {
+
+		return (List<Networks>) networksRepo.getNetworksUsingEntityManager1();
+
+	}
+	
+	public List<Networks> getNetworksUsingEntityManagerUsingTypedQuery() {
+
+		return (List<Networks>) networksRepo.getNetworksUsingEntityManagerUsingTypedQuery();
+
+	}
+	
+	public List<String> getNetworksUsingEntityManagerUsingTypedQuery1() {
+
+		return (List<String>) networksRepo.getNetworksUsingEntityManagerUsingTypedQuery1();
 
 	}
 
@@ -123,11 +171,9 @@ public class NetworksService {
 				network = networksDAO.save(network);
 				if (network != null) {
 					result = network.getNetworkName() + " is updated ";
-				}else {
+				} else {
 					result = networksModel.getNetworkName() + "is not updated";
 				}
-
-				
 
 			}
 		}

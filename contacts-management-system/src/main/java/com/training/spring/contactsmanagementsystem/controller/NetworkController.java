@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.training.spring.contactsmanagementsystem.entities.Networks;
 import com.training.spring.contactsmanagementsystem.models.NetworksModel;
 import com.training.spring.contactsmanagementsystem.service.NetworksService;
 
@@ -26,11 +27,66 @@ public class NetworkController {
 		return networksService.getNetworksList();
 
 	}
+	
+	@RequestMapping(value = "/list/{netWorkName}", produces = "application/json", method = { RequestMethod.GET })
+	public List<Networks> getNetworksList(@PathVariable("netWorkName") String networkName) {
+
+		return networksService.getNetworksByNetworkNameUsingQueryAnnotation(networkName);
+
+	}
+	
+	@RequestMapping(value = "/list/entity/manager", produces = "application/json", method = { RequestMethod.GET })
+	public List<Networks> getNetworksByEntityManager() {
+
+		return networksService.getNetworksUsingEntityManager();
+
+	}
+	
+	@RequestMapping(value = "/list/entity/manager/1", produces = "application/json", method = { RequestMethod.GET })
+	public List<Networks> getNetworksByEntityManager1() {
+
+		return networksService.getNetworksUsingEntityManager1();
+
+	}
+	
+	@RequestMapping(value = "/list/entity/manager/typed/query", produces = "application/json", method = { RequestMethod.GET })
+	public List<Networks> getNetworksUsingEntityManagerUsingTypedQuery() {
+
+		return networksService.getNetworksUsingEntityManagerUsingTypedQuery();
+
+	}
+	@RequestMapping(value = "/list/entity/manager/typed/query/1", produces = "application/json", method = { RequestMethod.GET })
+	public List<String> getNetworksUsingEntityManagerUsingTypedQuery1() {
+
+		return networksService.getNetworksUsingEntityManagerUsingTypedQuery1();
+
+	}
 
 	@RequestMapping(value = "/name", produces = "application/json", method = { RequestMethod.GET })
 	public NetworksModel getNetworkByName() {
 
 		return networksService.getNetworksByName("Vodafone");
+
+	}
+	
+	@RequestMapping(value = "/name/{networkName}", produces = "application/json", method = { RequestMethod.GET })
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation(@PathVariable("networkName") String networkName) {
+
+		return networksService.getRecordsByNetworkNameUsingQueryAnnotation(networkName);
+
+	}
+	
+	@RequestMapping(value = "/name/id/{networkId}", produces = "application/json", method = { RequestMethod.GET })
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation(@PathVariable("networkId") int networkId) {
+
+		return networksService.getRecordsByNetworkNameUsingQueryAnnotation(networkId);
+
+	}
+	
+	@RequestMapping(value = "/name/id/1", produces = "application/json", method = { RequestMethod.GET })
+	public List<String> getRecordsByNetworkNameUsingQueryAnnotation() {
+
+		return networksService.getRecordsByNetworkNameUsingQueryAnnotation();
 
 	}
 
@@ -63,6 +119,7 @@ public class NetworkController {
 		return networksService.addNetworks(networksModels);
 
 	}
+	
 
 	@RequestMapping(value = "/update", consumes = "application/json", produces = "application/json", method = {
 			RequestMethod.PUT })
