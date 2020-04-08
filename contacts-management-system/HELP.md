@@ -146,6 +146,85 @@ consumes="application/json",
 				}) })	
 	
 	
+	RBI Bank(producer)
+	-------
+	
+	1
+	2
+	3
+	4
+	5
+	6
+	
+	ICICI Bank(consumer)
+	--------------------
+	
+	need url
+	need type of the method
+	need to know the return type
+	what it is expecting as request
 	
 
+	
+	
+	
+	RestTemplate ref = new RestTemplate();
+	ref.getforentity()
+	
+	
+	
+	
+	-----------------------------
+	package com.training.spring.contactsmanagementsystem.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+
+
+public class DataReceiver {
+
+	RestTemplate restTemplate = new RestTemplate();
+
+		public List<String> getNetworksList() {
+			
+		
+
+		@SuppressWarnings("unchecked")
+		List<NetworksModel> networksList = restTemplate.getForObject("http://localhost:12345/networks/list",
+				List.class);
+		System.out.println(networksList);
+		
+//		networksList.stream().forEach(network -> network.getNetworkName()
+		
+		List<String> netwroks = new ArrayList<>();
+		for(NetworksModel n : networksList) {
+			netwroks.add(n.getNetworkName());
+		}
+
+		return netwroks;
+
+	}
+
+	public ResponseEntity<String> addNetwork(@RequestBody NetworksModel networksModel) {
+		
+
+		@SuppressWarnings("unchecked")
+		ResponseEntity<String> result = restTemplate.postForEntity("http://localhost:12345/networks/add", networksModel,
+				String.class);
+
+		return result;
+
+	}
+
+}
 	
