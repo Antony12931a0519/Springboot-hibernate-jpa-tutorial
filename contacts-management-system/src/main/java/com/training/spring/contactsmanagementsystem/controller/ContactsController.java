@@ -26,7 +26,7 @@ public class ContactsController {
 	@RequestMapping(value = "/hello", produces = "application/json", method = { RequestMethod.GET })
 	public String welcome() {
 		return "Hello";
-
+  
 	}
 
 	@RequestMapping(value = "/list", produces = "application/json", method = { RequestMethod.GET })
