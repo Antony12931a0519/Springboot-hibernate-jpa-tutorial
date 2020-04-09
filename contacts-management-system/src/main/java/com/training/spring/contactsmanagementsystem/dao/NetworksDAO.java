@@ -9,6 +9,8 @@ import org.springframework.data.repository.query.Param;
 import com.training.spring.contactsmanagementsystem.entities.Networks;
 
 public interface NetworksDAO extends CrudRepository<Networks, Integer> {
+	
+	
 
 	public Networks getRecordsByNetworkName(String networkName);
 	

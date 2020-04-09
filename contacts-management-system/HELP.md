@@ -227,4 +227,166 @@ public class DataReceiver {
 	}
 
 }
+
+
+cacheing
+-------------
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-cache -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<!-- <version>2.9.0</version> -->
+		</dependency>
+
+
+
+ehcache.xml
+------------
+<ehcache>
+	<diskStore path="java.io.tmpdir" />
+
+	<defaultCache maxElementsInMemory="2000" eternal="true"
+		overflowToDisk="false" timeToLiveSeconds="1200" />
+
+	<cache name="contactsCache" maxElementsInMemory="2000"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="10000" />
+	<cache name="networksNameCache" maxElementsInMemory="2000"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="10000" />
+</ehcache>
 	
+	
+	
+	
+	configuration file
+	-----------------
+	
+	2 methods
+	
+	cache manager and cachemanager factory bean
+	
+	RestTemplate res = new RestTemplate();
+	
+	res.hahksajkld();
+	
+	-------------------
+	
+	@EnableCacheing
+	@Configuration
+	@Bean
+	public RestTemplate getRestTemplate(){
+	return new RestTemplate();
+	}
+	
+		@Bean
+    public CacheManager cacheManager() {
+        return new EhCacheCacheManager(cacheMangerFactory().getObject());
+    }
+
+    @Bean
+    public EhCacheManagerFactoryBean cacheMangerFactory() {
+        EhCacheManagerFactoryBean bean = new EhCacheManagerFactoryBean();
+        bean.setConfigLocation(new ClassPathResource("ehcache.xml"));
+        bean.setShared(true);
+        return bean;
+    }
+    
+    
+    
+    @Autowired
+    RestTemplate rest;
+    
+    
+    -----------------------
+    
+    service class
+    ---------------
+    
+    @Cacheing(cacheName="iiejie",key="#jkkv")
+    method(){
+    
+    }
+    
+    
+    
+    package com.training.spring.contactsmanagementsystem.controller;
+
+import java.util.List;
+
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.client.RestTemplate;
+
+public class DataReceiver {
+
+	RestTemplate restTemplate = new RestTemplate();
+
+/*	public List<String> getNetworksList() {
+
+		@SuppressWarnings("unchecked")
+		List<NetworksModel> networksList = restTemplate.getForObject("http://localhost:12345/networks/list",
+				List.class);
+		System.out.println(networksList);
+
+		// networksList.stream().forEach(network -> network.getNetworkName()
+
+		List<String> netwroks = new ArrayList<>();
+		for (NetworksModel n : networksList) {
+			netwroks.add(n.getNetworkName());
+		}
+
+		return netwroks;
+
+	}
+
+	public ResponseEntity<String> addNetwork(@RequestBody NetworksModel networksModel) {
+
+		@SuppressWarnings("unchecked")
+		ResponseEntity<String> result = restTemplate.postForEntity("http://localhost:12345/networks/add", networksModel,
+				String.class);
+
+		return result;
+
+	}
+*/
+	public ResponseEntity<String> addNetwork1(@RequestBody NetworksModel networksModel) {
+
+		HttpEntity<NetworksModel> httpEntity = new HttpEntity<NetworksModel>(networksModel);
+
+		ResponseEntity<String> result = restTemplate.exchange("http://localhost:1231/networks/add", HttpMethod.POST,
+				httpEntity, String.class);
+		return result;
+
+	}
+	
+	public ResponseEntity<NetworksModel> deleteNetwork(NetworksModel networkId) {
+
+		HttpEntity<NetworksModel> httpEntity = new HttpEntity<NetworksModel>(networkId);
+
+		ResponseEntity<NetworksModel> result = restTemplate.exchange("http://localhost:1231/networks/add", HttpMethod.DELETE,
+				httpEntity, NetworksModel.class);
+		return result;
+
+	}
+
+	public List<NetworksModel> getNetworkNames() {
+
+		ResponseEntity<List> result = restTemplate.getForEntity("http://localhost:1231/networks/list", List.class);
+
+		List<NetworksModel> list = result.getBody();
+
+		return list;
+
+	}
+
+}
+    

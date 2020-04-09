@@ -65,7 +65,7 @@ public class NetworkController {
 	@RequestMapping(value = "/name", produces = "application/json", method = { RequestMethod.GET })
 	public NetworksModel getNetworkByName() {
 
-		return networksService.getNetworksByName("Vodafone");
+		return networksService.getNetworksByName("Vodafone","");
 
 	}
 	
@@ -93,14 +93,14 @@ public class NetworkController {
 	@RequestMapping(value = "/{networkName}", produces = "application/json", method = { RequestMethod.GET })
 	public NetworksModel getNetworkBySpecifiedField(@PathVariable("networkName") String networkName) {
 
-		return networksService.getNetworksByName(networkName);
+		return networksService.getNetworksByName(networkName,"");
 
 	}
 	
 	@RequestMapping(value = "/field", produces = "application/json", method = { RequestMethod.GET })
 	public NetworksModel getNetworkByField(@RequestParam("networkName") String networkName) {
 
-		return networksService.getNetworksByName(networkName);
+		return networksService.getNetworksByName(networkName,"");
 
 	}
 
@@ -126,6 +126,14 @@ public class NetworkController {
 	public String updateNetwork(@RequestBody NetworksModel networksModel) {
 
 		return networksService.updateNetwork(networksModel);
+
+	}
+	
+	@RequestMapping(value = "/delete", consumes = "application/json", produces = "application/json", method = {
+			RequestMethod.DELETE })
+	public String deleteNetwork(@RequestBody NetworksModel networksModel) {
+
+		return networksService.deleteNetwork(networksModel);
 
 	}
 

@@ -18,10 +18,13 @@ public class NetworksService {
 
 	@Autowired
 	NetworksDAO networksDAO;
-	
+
 	@Autowired
 	NetworkRepository networksRepo;
+	
+	public static String list;
 
+	@Cacheable(cacheNames = "networksNameListCache")
 	public List<NetworksModel> getNetworksList() {
 
 		List<Networks> networks = (List<Networks>) networksDAO.findAll();
@@ -38,8 +41,8 @@ public class NetworksService {
 
 	}
 
-//	@Cacheable(cacheNames="networksNameCache",key="#networkName")
-	public NetworksModel getNetworksByName(String networkName) {
+	@Cacheable(cacheNames="networksNameCache",key="#networkName")
+	public NetworksModel getNetworksByName(String networkName,String n1) {
 
 		try {
 			Networks networks = networksDAO.getRecordsByNetworkName(networkName);
@@ -59,43 +62,43 @@ public class NetworksService {
 		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation(networkName);
 
 	}
-	
+
 	public List<String> getRecordsByNetworkNameUsingQueryAnnotation(int networkId) {
 
 		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation(networkId);
 
 	}
-	
+
 	public List<String> getRecordsByNetworkNameUsingQueryAnnotation() {
 
 		return (List<String>) networksDAO.getRecordsByNetworkNameUsingQueryAnnotation();
 
 	}
-	
+
 	public List<Networks> getNetworksByNetworkNameUsingQueryAnnotation(String networkName) {
 
 		return (List<Networks>) networksDAO.getNetworksByNetworkNameUsingQueryAnnotation(networkName);
 
 	}
-	
+
 	public List<Networks> getNetworksUsingEntityManager() {
 
 		return (List<Networks>) networksRepo.getNetworksUsingEntityManager();
 
 	}
-	
+
 	public List<Networks> getNetworksUsingEntityManager1() {
 
 		return (List<Networks>) networksRepo.getNetworksUsingEntityManager1();
 
 	}
-	
+
 	public List<Networks> getNetworksUsingEntityManagerUsingTypedQuery() {
 
 		return (List<Networks>) networksRepo.getNetworksUsingEntityManagerUsingTypedQuery();
 
 	}
-	
+
 	public List<String> getNetworksUsingEntityManagerUsingTypedQuery1() {
 
 		return (List<String>) networksRepo.getNetworksUsingEntityManagerUsingTypedQuery1();
@@ -180,6 +183,17 @@ public class NetworksService {
 			}
 		}
 		return result;
+	}
+	
+	public String deleteNetwork(NetworksModel networksModel) {
+		Networks n = new Networks();
+		n.setNetworkId(1);
+		n.setNetworkName("Vodafone");
+		
+		networksDAO.delete(n);
+		return "Record Deleted";
+		
+		
 	}
 
 }
