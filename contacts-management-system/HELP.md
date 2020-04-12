@@ -389,4 +389,34 @@ public class DataReceiver {
 	}
 
 }
+
+
+
+Swagger configuration
+---------------------
+2 dependedcies
+
+<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+
+    http://localhost:1231/swagger-ui.html#/
+    
+    
+    
+    @API("")--for gving the description of the entire end points in a class
+    @ApiResponses
+    
     

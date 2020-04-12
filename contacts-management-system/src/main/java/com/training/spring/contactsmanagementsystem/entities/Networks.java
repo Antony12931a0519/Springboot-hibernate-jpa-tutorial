@@ -10,24 +10,27 @@ import javax.persistence.Id;
 import javax.persistence.SqlResultSetMapping;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "Networks")
+@ApiModel(description = "Details of network available in the table. ")
 @SqlResultSetMapping(name = "mapppinNativeQuery", // same as resultSetMapping
 		// above in NativeQuery
 		classes = {
 				@ConstructorResult(targetClass = com.training.spring.contactsmanagementsystem.entities.Networks.class, columns = {
 						@ColumnResult(name = "network_id", type = Integer.class),
-						@ColumnResult(name = "network_name", type = String.class)
-				}) })
+						@ColumnResult(name = "network_name", type = String.class) }) })
 @SqlResultSetMapping(name = "mapppinNativeQuery1", // same as resultSetMapping
-// above in NativeQuery
-classes = {
-		@ConstructorResult(targetClass = com.training.spring.contactsmanagementsystem.entities.Networks.class, columns = {
-				@ColumnResult(name = "network_name", type = String.class)
-		}) })
+		// above in NativeQuery
+		classes = {
+				@ConstructorResult(targetClass = com.training.spring.contactsmanagementsystem.entities.Networks.class, columns = {
+						@ColumnResult(name = "network_name", type = String.class) }) })
 public class Networks {
 
 	@Id
+	@ApiModelProperty(notes = "The database generated employee ID")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "network_id")
 	private int networkId;
@@ -68,8 +71,7 @@ public class Networks {
 		super();
 		this.networkId = networkId;
 		this.networkName = networkName;
-		
-		
+
 	}
 
 	public Networks() {

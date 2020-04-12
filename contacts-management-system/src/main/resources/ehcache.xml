@@ -4,7 +4,8 @@
 	<defaultCache maxElementsInMemory="2000" eternal="true"
 		overflowToDisk="false" timeToLiveSeconds="1200" />
 
-
+	<cache name="contactsCache" maxElementsInMemory="2000"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="10000" />
 	<cache name="networksNameListCache" maxElementsInMemory="2000"
 		eternal="false" overflowToDisk="false" timeToLiveSeconds="10000" />
 	<cache name="networksNameCache" maxElementsInMemory="2000"
