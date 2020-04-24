@@ -163,5 +163,13 @@ public class NetworkController {
 		return networksService.deleteNetwork(networksModel);
 
 	}
+	
+	@RequestMapping(value = "/delete", consumes = "application/json", produces = "application/json", method = {
+			RequestMethod.PATCH })
+	public String deleteNetwork1(@RequestBody NetworksModel networksModel) {
+
+		return networksService.deleteNetwork(networksModel);
+
+	}
 
 }

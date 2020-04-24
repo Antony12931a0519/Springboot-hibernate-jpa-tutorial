@@ -61,10 +61,10 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -86,11 +86,11 @@
 			<version>5.0.3</version>
 			<scope>test</scope>
 		</dependency>
-		
+		<!-- 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-activemq</artifactId>
-		</dependency>
+		</dependency> -->
 
 	</dependencies>
 	<build>

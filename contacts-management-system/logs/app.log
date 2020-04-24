@@ -1,1 +1,40 @@
-2020-04-12 09:17:36,515 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-10 housekeeper] HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=12h11m38s363ms946µs440ns).
+2020-04-24 15:44:49,688 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 10020 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-24 15:44:49,746 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\ANTHONY_SAMPATH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-24 15:44:51,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-24 15:44:52,060 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 101ms. Found 2 JPA repository interfaces.
+2020-04-24 15:44:54,337 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-24 15:44:54,451 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-1231"]
+2020-04-24 15:44:54,453 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-24 15:44:54,453 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 15:44:54,972 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 15:44:54,972 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 5033 ms
+2020-04-24 15:44:55,085 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-04-24 15:44:55,418 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-04-24 15:44:55,427 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-24 15:44:55,738 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-24 15:44:55,865 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-24 15:44:56,091 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-24 15:44:56,315 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-24 15:44:57,494 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-24 15:44:57,508 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-24 15:44:57,549 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 15:44:59,226 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-24 15:44:59,480 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [restartedMain] Initializing EhCache CacheManager
+2020-04-24 15:44:59,537 WARN net.sf.ehcache.config.CacheConfiguration [restartedMain] Cache 'null' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'null' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2020-04-24 15:45:00,093 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 15:45:00,587 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-04-24 15:45:00,636 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-04-24 15:45:00,663 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-04-24 15:45:01,017 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
+2020-04-24 15:45:01,193 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
+2020-04-24 15:45:01,225 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
+2020-04-24 15:45:01,241 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
+2020-04-24 15:45:01,286 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-1231"]
+2020-04-24 15:45:01,338 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
+2020-04-24 15:45:01,346 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 12.749 seconds (JVM running for 14.906)
+2020-04-24 15:45:44,963 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-1231-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 15:45:44,965 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 15:45:44,982 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Completed initialization in 17 ms

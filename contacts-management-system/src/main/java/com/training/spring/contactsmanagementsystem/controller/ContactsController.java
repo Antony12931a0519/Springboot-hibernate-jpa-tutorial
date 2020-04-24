@@ -22,12 +22,15 @@ import com.training.spring.contactsmanagementsystem.service.ContactsService;
 @RequestMapping("/contacts")
 public class ContactsController {
 	Logger log = LoggerFactory.getLogger(ContactsController.class);
+	
+	
 
 	@Autowired
 	ContactsService contactsService;
 
 	@RequestMapping(value = "/hello", produces = "application/json", method = { RequestMethod.GET })
 	public String welcome() {
+		
 		return "Hello";
   
 	}
@@ -62,6 +65,12 @@ public class ContactsController {
 			RequestMethod.PUT })
 	public String updateContactDetails(@RequestBody ContactsModel contactsModel) {
 		return contactsService.updateContactDetails(contactsModel);
+
+	}
+	
+	@RequestMapping(value = "/list/patch", produces = "application/json", method = { RequestMethod.PATCH })
+	public List<ContactsModel> getContactsList1() {
+		return contactsService.getContactsList();
 
 	}
 

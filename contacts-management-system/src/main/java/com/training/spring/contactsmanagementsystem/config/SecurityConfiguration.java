@@ -1,4 +1,4 @@
-package com.training.spring.contactsmanagementsystem.config;
+/*package com.training.spring.contactsmanagementsystem.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -31,3 +31,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	}
 
 }
+*/
