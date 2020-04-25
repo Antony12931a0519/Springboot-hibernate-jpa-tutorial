@@ -1,4 +1,4 @@
-package com.training.spring.contactsmanagementsystem.config;
+/*package com.training.spring.contactsmanagementsystem.config;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -26,3 +26,4 @@ public class CacheConfiguration {
     }
 
 }
+*/

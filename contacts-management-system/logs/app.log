@@ -1,40 +1,297 @@
-2020-04-24 15:44:49,688 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 10020 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
-2020-04-24 15:44:49,746 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
-2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\ANTHONY_SAMPATH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-04-24 15:44:49,939 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-04-24 15:44:51,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-24 15:44:52,060 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 101ms. Found 2 JPA repository interfaces.
-2020-04-24 15:44:54,337 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
-2020-04-24 15:44:54,451 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-1231"]
-2020-04-24 15:44:54,453 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
-2020-04-24 15:44:54,453 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-04-24 15:44:54,972 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-04-24 15:44:54,972 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 5033 ms
-2020-04-24 15:44:55,085 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2020-04-24 15:44:55,418 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2020-04-24 15:44:55,427 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
-2020-04-24 15:44:55,738 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-04-24 15:44:55,865 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
-2020-04-24 15:44:56,091 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-04-24 15:44:56,315 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-04-24 15:44:57,494 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-04-24 15:44:57,508 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-24 15:44:57,549 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
-2020-04-24 15:44:59,226 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-24 15:44:59,480 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [restartedMain] Initializing EhCache CacheManager
-2020-04-24 15:44:59,537 WARN net.sf.ehcache.config.CacheConfiguration [restartedMain] Cache 'null' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'null' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
-2020-04-24 15:45:00,093 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-24 15:45:00,587 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
-2020-04-24 15:45:00,636 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-04-24 15:45:00,663 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-04-24 15:45:01,017 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
-2020-04-24 15:45:01,193 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
-2020-04-24 15:45:01,225 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
-2020-04-24 15:45:01,241 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
-2020-04-24 15:45:01,286 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-1231"]
-2020-04-24 15:45:01,338 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
-2020-04-24 15:45:01,346 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 12.749 seconds (JVM running for 14.906)
-2020-04-24 15:45:44,963 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-1231-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-24 15:45:44,965 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Initializing Servlet 'dispatcherServlet'
-2020-04-24 15:45:44,982 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Completed initialization in 17 ms
+2020-04-25 09:11:40,631 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h46m51s509ms501µs267ns).
+2020-04-25 09:49:54,264 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-1231-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at com.training.spring.contactsmanagementsystem.service.ContactsService.updateContactDetails(ContactsService.java:47)
+	at com.training.spring.contactsmanagementsystem.service.ContactsService$$FastClassBySpringCGLIB$$ee0a089a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.training.spring.contactsmanagementsystem.service.ContactsService$$EnhancerBySpringCGLIB$$c91ba083.updateContactDetails(<generated>)
+	at com.training.spring.contactsmanagementsystem.controller.ContactsController.updateContactDetails(ContactsController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-25 10:05:44,154 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 5212 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-25 10:05:44,165 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-25 10:05:44,274 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\ANTHONY_SAMPATH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 10:05:44,274 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 10:05:44,274 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 10:05:46,086 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 10:05:46,247 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 141ms. Found 2 JPA repository interfaces.
+2020-04-25 10:05:51,853 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-25 10:05:51,890 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:05:51,891 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-25 10:05:51,891 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 10:05:52,771 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-25 10:05:52,772 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 8497 ms
+2020-04-25 10:05:53,466 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-04-25 10:05:54,074 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-04-25 10:05:54,090 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-25 10:05:55,386 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 10:05:55,718 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 10:05:56,407 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 10:05:56,945 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-25 10:06:00,158 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 10:06:00,199 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:06:00,473 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-04-25 10:07:02,226 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 10:07:04,398 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [restartedMain] Initializing EhCache CacheManager
+2020-04-25 10:07:04,554 WARN net.sf.ehcache.config.CacheConfiguration [restartedMain] Cache 'null' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'null' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2020-04-25 10:07:08,401 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 10:07:11,924 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-04-25 10:07:12,109 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-04-25 10:07:12,262 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-04-25 10:07:13,569 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
+2020-04-25 10:07:15,194 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
+2020-04-25 10:07:15,623 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
+2020-04-25 10:07:15,740 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
+2020-04-25 10:07:16,009 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:07:16,153 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
+2020-04-25 10:07:16,162 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 92.83 seconds (JVM running for 95.274)
+2020-04-25 10:08:31,116 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 12528 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-25 10:08:31,124 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-25 10:08:31,219 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\ANTHONY_SAMPATH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 10:08:31,219 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 10:08:31,219 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 10:08:33,066 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 10:08:33,195 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 110ms. Found 2 JPA repository interfaces.
+2020-04-25 10:08:35,544 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-25 10:08:35,561 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:08:35,562 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-25 10:08:35,562 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 10:08:36,110 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-25 10:08:36,111 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 4891 ms
+2020-04-25 10:08:36,197 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-04-25 10:08:36,580 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-04-25 10:08:36,597 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-25 10:08:36,929 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 10:08:37,072 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 10:08:37,356 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 10:08:37,614 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-25 10:08:39,093 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 10:08:39,111 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:08:39,147 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-04-25 10:08:40,734 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 10:08:40,961 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [restartedMain] Initializing EhCache CacheManager
+2020-04-25 10:08:41,031 WARN net.sf.ehcache.config.CacheConfiguration [restartedMain] Cache 'null' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'null' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2020-04-25 10:08:41,528 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 10:08:41,933 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-04-25 10:08:41,979 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-04-25 10:08:42,004 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-04-25 10:08:42,378 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
+2020-04-25 10:08:42,628 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
+2020-04-25 10:08:42,683 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
+2020-04-25 10:08:42,700 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
+2020-04-25 10:08:42,744 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:08:42,778 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
+2020-04-25 10:08:42,782 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 12.529 seconds (JVM running for 14.859)
+2020-04-25 10:10:07,955 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 9104 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-25 10:10:07,959 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-25 10:10:08,059 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\ANTHONY_SAMPATH\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/ANTHONY_SAMPATH/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-25 10:10:08,059 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-25 10:10:08,060 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-25 10:10:09,678 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 10:10:09,799 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 106ms. Found 2 JPA repository interfaces.
+2020-04-25 10:10:11,836 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-25 10:10:11,851 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:10:11,851 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-25 10:10:11,851 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 10:10:12,308 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-25 10:10:12,309 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 4248 ms
+2020-04-25 10:10:12,375 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-04-25 10:10:12,670 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-04-25 10:10:12,681 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-25 10:10:12,935 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 10:10:13,069 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 10:10:13,342 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 10:10:13,575 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-25 10:10:14,435 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 10:10:14,444 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:10:14,481 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-04-25 10:10:15,761 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 10:10:15,940 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [restartedMain] Initializing EhCache CacheManager
+2020-04-25 10:10:15,978 WARN net.sf.ehcache.config.CacheConfiguration [restartedMain] Cache 'null' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'null' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+2020-04-25 10:10:16,390 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 10:10:16,685 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-04-25 10:10:16,716 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-04-25 10:10:16,734 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-04-25 10:10:16,964 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
+2020-04-25 10:10:17,104 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
+2020-04-25 10:10:17,129 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
+2020-04-25 10:10:17,138 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
+2020-04-25 10:10:17,174 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-1231"]
+2020-04-25 10:10:17,207 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
+2020-04-25 10:10:17,210 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 9.992 seconds (JVM running for 11.888)
+2020-04-25 10:10:33,785 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-1231-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 10:10:33,786 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-25 10:10:33,799 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Completed initialization in 13 ms
+2020-04-25 10:11:59,651 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 10:11:59,657 INFO org.springframework.cache.ehcache.EhCacheManagerFactoryBean [Thread-5] Shutting down EhCache CacheManager
+2020-04-25 10:11:59,711 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:11:59,743 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2020-04-25 10:11:59,770 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2020-04-25 10:12:13,500 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 9104 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-25 10:12:13,501 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-25 10:12:14,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 10:12:14,827 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 44ms. Found 2 JPA repository interfaces.
+2020-04-25 10:12:16,071 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-25 10:12:16,076 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-25 10:12:16,076 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 10:12:16,685 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-25 10:12:16,685 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3180 ms
+2020-04-25 10:12:16,716 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2020-04-25 10:12:16,722 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2020-04-25 10:12:16,722 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-25 10:12:16,815 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 10:12:16,830 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-25 10:12:16,941 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 10:12:16,941 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:12:16,949 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-04-25 10:12:16,952 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheConfiguration' defined in file [C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes\com\training\spring\contactsmanagementsystem\config\CacheConfiguration.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.training.spring.contactsmanagementsystem.config.CacheConfiguration$$EnhancerBySpringCGLIB$$7be240e1]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The type net.sf.ehcache.CacheManager cannot be resolved. It is indirectly referenced from required .class files
+	The method getObject() from the type EhCacheManagerFactoryBean refers to the missing type CacheManager
+
+2020-04-25 10:12:16,952 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:12:16,953 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2020-04-25 10:12:16,958 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2020-04-25 10:12:16,958 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2020-04-25 10:12:16,961 WARN org.apache.catalina.loader.WebappClassLoaderBase [restartedMain] The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-04-25 10:12:16,965 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-25 10:12:16,967 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheConfiguration' defined in file [C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes\com\training\spring\contactsmanagementsystem\config\CacheConfiguration.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.training.spring.contactsmanagementsystem.config.CacheConfiguration$$EnhancerBySpringCGLIB$$7be240e1]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The type net.sf.ehcache.CacheManager cannot be resolved. It is indirectly referenced from required .class files
+	The method getObject() from the type EhCacheManagerFactoryBean refers to the missing type CacheManager
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.training.spring.contactsmanagementsystem.ContactsManagementApplication.main(ContactsManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.training.spring.contactsmanagementsystem.config.CacheConfiguration$$EnhancerBySpringCGLIB$$7be240e1]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The type net.sf.ehcache.CacheManager cannot be resolved. It is indirectly referenced from required .class files
+	The method getObject() from the type EhCacheManagerFactoryBean refers to the missing type CacheManager
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The type net.sf.ehcache.CacheManager cannot be resolved. It is indirectly referenced from required .class files
+	The method getObject() from the type EhCacheManagerFactoryBean refers to the missing type CacheManager
+
+	at com.training.spring.contactsmanagementsystem.config.CacheConfiguration.<init>(CacheConfiguration.java:17)
+	at com.training.spring.contactsmanagementsystem.config.CacheConfiguration$$EnhancerBySpringCGLIB$$7be240e1.<init>(<generated>)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 24 common frames omitted
+2020-04-25 10:12:20,681 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Starting ContactsManagementApplication on II39-DXVRQQ2 with PID 9104 (C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system\target\classes started by anthony_sampath in C:\Users\ANTHONY_SAMPATH\git\Springboot-hibernate-jpa-tutorial\contacts-management-system)
+2020-04-25 10:12:20,681 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] The following profiles are active: test
+2020-04-25 10:12:21,284 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 10:12:21,310 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26ms. Found 2 JPA repository interfaces.
+2020-04-25 10:12:22,094 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 1231 (http)
+2020-04-25 10:12:22,095 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-04-25 10:12:22,095 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 10:12:22,456 INFO org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-25 10:12:22,456 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1770 ms
+2020-04-25 10:12:22,471 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2020-04-25 10:12:22,474 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2020-04-25 10:12:22,475 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/contacts'
+2020-04-25 10:12:22,521 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 10:12:22,529 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-25 10:12:22,607 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 10:12:22,608 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 10:12:22,616 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-04-25 10:12:22,794 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 10:12:22,878 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 10:12:22,962 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-04-25 10:12:22,963 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-04-25 10:12:22,967 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-04-25 10:12:23,048 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: welcomeUsingGET_1
+2020-04-25 10:12:23,237 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getNetworksListUsingGET_1
+2020-04-25 10:12:23,410 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_1
+2020-04-25 10:12:23,425 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRecordsByNetworkNameUsingQueryAnnotationUsingGET_2
+2020-04-25 10:12:23,447 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 1231 (http) with context path ''
+2020-04-25 10:12:23,461 INFO com.training.spring.contactsmanagementsystem.ContactsManagementApplication [restartedMain] Started ContactsManagementApplication in 2.89 seconds (JVM running for 138.124)
+2020-04-25 10:12:23,463 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-04-25 10:12:40,070 INFO org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] [http-nio-1231-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 10:12:40,070 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-25 10:12:40,079 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-1231-exec-1] Completed initialization in 9 ms
