@@ -18,8 +18,8 @@ import com.training.spring.contactsmanagementsystem.models.ContactsModel;
 import com.training.spring.contactsmanagementsystem.service.ContactsService;
 
 @RestController
-@CrossOrigin("*")
 @RequestMapping("/contacts")
+@CrossOrigin(origins="*")
 public class ContactsController {
 	Logger log = LoggerFactory.getLogger(ContactsController.class);
 	
@@ -35,9 +35,10 @@ public class ContactsController {
   
 	}
 
+	
 	@RequestMapping(value = "/list", produces = "application/json", method = { RequestMethod.GET })
-	public List<ContactsModel> getContactsList() {
-		return contactsService.getContactsList();
+	public ResponseEntity<List<ContactsModel>> getContactsList() {
+		return new ResponseEntity<List<ContactsModel>>(contactsService.getContactsList(), HttpStatus.OK);
 
 	}
 
